@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2.4fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "h f"
+    ;
+}
+
+header{
+    grid-area: h;
+    background-image: url(img/cadastropessoal.jpg);
+}
+
+ aside{
+    grid-area: f;
+    background-color: rgb(112, 112, 112);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside> h1{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 92px;
+    margin-bottom: 50px;
+    color: black;
+}
+
+ form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    row-gap: 54px;
+}
+
+form > input {
+    height: 54px;
+    border-radius: 18px;
+}
+
+form > input{
+    background: #A20101;
+}
+
+form > input[type="submit"]{
+    background: #B9323A;
+    font-size: 2rem;
+    border-radius: 18px;
+}
+
+form > label{
+    font-size: 2.5rem;
+}
