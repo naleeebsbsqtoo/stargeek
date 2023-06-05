@@ -8,7 +8,7 @@
 .container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 120px auto auto 80px;
+    grid-template-rows: 120px auto 120px;
     grid-template-areas: 
     "h"
     "m"
@@ -48,6 +48,17 @@ main{
     flex-direction: column;
 }
 
+.card img{
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    width: 300px;
+    height: 200px;
+}
+
+.cards img:hover{
+    opacity: 0.5;
+}
+
 .cardinfo{
     background-color: black;
     padding: 10px 20px;
@@ -56,14 +67,23 @@ main{
     column-gap: 100px;
 }
 
-.cardinfo a{
-    font-size: 1.5rem;
+.cardnome {
     color: white;
-    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(241, 77, 107);
+    text-align: center;
+    margin-top: -5px;
+    padding: 20px;
 }
+
+.cardnome p{
+    font-size: 1rem;
+    font-weight: normal;
+}
+
 
 footer{
     grid-area: f;
     background: #C8A000;
-    height: 150px;
 }

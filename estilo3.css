@@ -67,7 +67,7 @@ form > input [type= "submit"]:hover{
 .btn{
     display: flex;
     justify-content: center;
-    height: 150px;
+    height: 130px;
 }
 
 form > div > input[type="submit"]{
